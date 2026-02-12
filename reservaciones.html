@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Encabezado -->
+    
     <header>
         <nav class="navbar">
             <div class="container">
@@ -27,7 +27,7 @@
         </nav>
     </header>
 
-    <!-- Encabezado de página -->
+   
     <section class="page-header">
         <div class="container">
             <h1>Sistema de Reservaciones</h1>
@@ -39,7 +39,7 @@
     <section class="reservation-section">
         <div class="container">
             
-            <!-- Panel de Búsqueda de Disponibilidad -->
+           
             <div class="availability-panel">
                 <h2>Consultar Disponibilidad</h2>
                 <form id="availabilityForm" class="availability-form">
@@ -76,21 +76,21 @@
                 </form>
             </div>
 
-            <!-- Resultados de Disponibilidad -->
+            
             <div id="availabilityResults" class="availability-results" style="display: none;">
                 <h3>Habitaciones Disponibles</h3>
                 <div class="results-grid">
-                    <!-- Los resultados se cargarán dinámicamente con JavaScript -->
+                   
                 </div>
             </div>
 
-            <!-- Formulario de Reservación -->
+           
             <div id="reservationForm" class="reservation-form-container" style="display: none;">
                 <h2>Completa tu Reservación</h2>
                 
                 <form id="bookingForm" class="booking-form">
                     
-                    <!-- Información del Huésped -->
+                    
                     <div class="form-section">
                         <h3>Información del Huésped Principal</h3>
                         <div class="form-row">
@@ -121,7 +121,7 @@
                         </div>
                     </div>
 
-                    <!-- Detalles de la Reservación -->
+                    
                     <div class="form-section">
                         <h3>Detalles de la Reservación</h3>
                         <div class="reservation-summary">
@@ -154,7 +154,7 @@
                         </div>
                     </div>
 
-                    <!-- Información de Pago -->
+                    
                     <div class="form-section">
                         <h3>Información de Pago</h3>
                         <div class="payment-options">
@@ -192,7 +192,7 @@
                         </div>
                     </div>
 
-                    <!-- Resumen de Costos -->
+                    
                     <div class="form-section">
                         <h3>Resumen de Costos</h3>
                         <div class="cost-summary">
@@ -219,7 +219,7 @@
                         </div>
                     </div>
 
-                    <!-- Términos y Condiciones -->
+                    
                     <div class="form-section">
                         <div class="terms-checkbox">
                             <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
@@ -230,7 +230,7 @@
                         </div>
                     </div>
 
-                    <!-- Botones de Acción -->
+                    
                     <div class="form-actions">
                         <button type="button" class="btn-secondary" onclick="history.back()">Cancelar</button>
                         <button type="submit" class="btn-primary">Confirmar Reservación</button>
@@ -238,11 +238,11 @@
                 </form>
             </div>
 
-            <!-- Panel de Control de Ocupación (Para administración) -->
+            
             <div class="admin-panel" style="display: none;">
                 <h2>Panel de Control de Ocupación</h2>
                 <div class="occupancy-grid">
-                    <!-- Habitaciones Standard -->
+                 
                     <div class="room-status-group">
                         <h3>Habitaciones Standard (5 total)</h3>
                         <div class="room-status-list">
@@ -269,7 +269,7 @@
                         </div>
                     </div>
 
-                    <!-- Habitaciones Deluxe -->
+                    
                     <div class="room-status-group">
                         <h3>Habitaciones Deluxe (6 total)</h3>
                         <div class="room-status-list">
@@ -300,7 +300,7 @@
                         </div>
                     </div>
 
-                    <!-- Suites Premium -->
+                   
                     <div class="room-status-group">
                         <h3>Suites Premium (4 total)</h3>
                         <div class="room-status-list">
@@ -347,7 +347,7 @@
         </div>
     </section>
 
-    <!-- Modal de Confirmación -->
+    
     <div id="confirmationModal" class="modal" style="display: none;">
         <div class="modal-content">
             <div class="modal-header">
