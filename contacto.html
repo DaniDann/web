@@ -1,47 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contacto - Hotel Quinta Dalam">
-    <title>Contacto - Hotel Quinta Dalam</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contacto - Hotel Quinta Dalam" />
+  <title>Contacto - Hotel Quinta Dalam</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <div class="logo">
-                    <h1>Quinta Dalam</h1>
-                    <p class="tagline">Tu hogar lejos de casa</p>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="habitaciones.html">Habitaciones</a></li>
-                    <li><a href="reservaciones.html">Reservaciones</a></li>
-                    <li><a href="contacto.html" class="active">Contacto</a></li>
-                </ul>
-               
-            </div>
-        </nav>
-    </header>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h1>Quinta Dalam</h1>
+        <p class="tagline">Tu hogar lejos de casa</p>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="habitaciones.html">Habitaciones</a></li>
+        <li><a href="reservaciones.html">Reservaciones</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+      <a class="btn-reserva" href="reservaciones.html">Reservar Ahora</a>
+    </div>
+  </nav>
+</header>
 
-   
+  <main id="contenido">
     <section class="page-header">
-        <div class="container">
-            <h1>Contáctanos</h1>
-            <p>Estamos aquí para ayudarte</p>
-        </div>
+      <div class="container">
+        <h1>Contacto</h1>
+        <p>Escríbenos y con gusto te ayudamos.</p>
+      </div>
     </section>
 
-   
     <section class="contact-section">
-        <div class="container">
-            
-  
+      <div class="container" style="display:grid;gap:18px;">
+        <div class="contact-info-grid">
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>Dirección</h3>
+            <p>Dirección de ejemplo, Michoacán, MX.</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <h3>Teléfono</h3>
+            <p>+52 000 000 0000</p>
+            <div class="social-links">
+              <a href="#">WhatsApp</a>
+              <a href="#">Llamar</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <h3>Correo</h3>
+            <p>contacto@quintadalam.com</p>
+          </div>
+        </div>
 
-    <script src="js/contact.js"></script>
-    <script src="js/main.js"></script>
+        <div class="contact-form-section">
+          <h2>Envíanos un mensaje</h2>
+          <form action="#" method="post" autocomplete="on">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="c-nombre">Nombre</label>
+                <input id="c-nombre" name="nombre" type="text" required />
+              </div>
+              <div class="form-group">
+                <label for="c-correo">Correo</label>
+                <input id="c-correo" name="correo" type="email" required />
+              </div>
+              <div class="form-group">
+                <label for="c-telefono">Teléfono</label>
+                <input id="c-telefono" name="telefono" type="tel" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label for="c-asunto">Asunto</label>
+                <input id="c-asunto" name="asunto" type="text" required placeholder="¿En qué podemos ayudarte?" />
+              </div>
+              <div class="form-group full-width">
+                <label for="c-mensaje">Mensaje</label>
+                <textarea id="c-mensaje" name="mensaje" rows="6" required placeholder="Escribe tu mensaje..."></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn-secondary" type="reset">Limpiar</button>
+              <button class="btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="map-container" >
+          <div class="map-placeholder">Mapa (placeholder)</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Lo que nos diferencia</h4>
+        <p>Somos un hotel que busca representar lo más icónico de Michoacán con una experiencia cálida, elegante y cómoda.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="habitaciones.html">Habitaciones</a></li>
+          <li><a href="reservaciones.html">Reservaciones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Atención</h4>
+        <p>Horario: 8:00–22:00</p>
+        <p>WhatsApp: +52 000 000 0000</p>
+        <p>Correo: contacto@quintadalam.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Quinta Dalam. Todos los derechos reservados.</div>
+  </div>
+</footer>
 </body>
 </html>

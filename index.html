@@ -1,98 +1,172 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hotel Quinta Dalam - Reserva tu habitación en nuestro exclusivo hotel">
-    <title>Hotel Quinta Dalam - Inicio</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hotel Quinta Dalam - Reserva tu habitación en nuestro exclusivo hotel" />
+  <title>Hotel Quinta Dalam - Inicio</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <div class="logo">
-                    <h1>Quinta Dalam</h1>
-                    <p class="tagline">Tu hogar lejos de casa</p>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="active">Inicio</a></li>
-                    <li><a href="habitaciones.html">Habitaciones</a></li>
-                    <li><a href="reservaciones.html">Reservaciones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-                <button class="btn-reserva">Reservar Ahora</button>
-            </div>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Bienvenido a Quinta Dalam</h2>
-            <p>Experimenta el lujo y la comodidad en cada estancia</p>
-            <a href="reservaciones.html" class="btn-primary">Hacer Reservación</a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <h1>Quinta Dalam</h1>
+          <p class="tagline">Tu hogar lejos de casa</p>
         </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="habitaciones.html">Habitaciones</a></li>
+          <li><a href="reservaciones.html">Reservaciones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <a class="btn-reserva" href="reservaciones.html">Reservar Ahora</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-label="Portada">
+      <div class="hero-content">
+        <h2>Bienvenido a Quinta Dalam</h2>
+        <p>Habitaciones temáticas inspiradas en municipios de Michoacán: elegancia, calidez y descanso en cada detalle.</p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a class="btn-primary" href="reservaciones.html">Reservar</a>
+          <a class="btn-secondary" href="habitaciones.html">Ver habitaciones</a>
+        </div>
+      </div>
     </section>
 
     <section class="mission-vision">
-        <div class="container">
-            <div class="mission">
-                <h3>Nuestra Misión</h3>
-                <p>Ofrecer a nuestros huéspedes una experiencia inolvidable mediante un servicio excepcional, instalaciones de primera clase y una atención personalizada que supere sus expectativas.</p>
-            </div>
-            <div class="vision">
-                <h3>Nuestra Visión</h3>
-                <p>Ser el hotel preferido en la región, reconocido por nuestra excelencia en hospitalidad, innovación en servicios y compromiso con la satisfacción de nuestros huéspedes.</p>
-            </div>
+      <div class="container">
+        <div class="mission">
+          <h3>Misión</h3>
+          <p>Brindar una estancia cómoda y memorable, con espacios diseñados para relajarte y vivir una experiencia auténtica.</p>
         </div>
+        <div class="vision">
+          <h3>Visión</h3>
+          <p>Ser un hotel referente por su servicio, diseño temático y atención cálida, inspirando orgullo por nuestras tradiciones.</p>
+        </div>
+      </div>
     </section>
 
-    
     <section class="rooms-preview">
-        <div class="container">
-            <h2>Nuestras Habitaciones</h2>
-            <p class="subtitle">15 habitaciones diseñadas para tu comodidad</p>
-            <div class="rooms-grid">
-                <div class="room-card">
-                    <div class="room-image"></div>
-                
-                    <a href="habitaciones.html" class="btn-secondary">Ver Más</a>
-                </div>
-            </div>
+      <div class="container">
+        <h2>Habitaciones destacadas</h2>
+        <p class="subtitle">Cada habitación tiene su propia atmósfera temática (sin ser su ubicación).</p>
+
+        <div class="rooms-grid">
+
+          <article class="room-card">
+            <div class="room-image"></div>
+            <h4>Tzintzunzan</h4>
+            <p>Inspiración: Cobre y lacas. Ideal para descansar con estilo.</p>
+            <a class="btn-secondary" href="habitaciones.html#tzintzunzan">Ver detalles</a>
+          </article>
+
+          <article class="room-card">
+            <div class="room-image"></div>
+            <h4>Paracho</h4>
+            <p>Inspiración: Guitarras y madera. Ideal para descansar con estilo.</p>
+            <a class="btn-secondary" href="habitaciones.html#paracho">Ver detalles</a>
+          </article>
+
+          <article class="room-card">
+            <div class="room-image"></div>
+            <h4>Yunuen</h4>
+            <p>Inspiración: Lago y calma. Ideal para descansar con estilo.</p>
+            <a class="btn-secondary" href="habitaciones.html#yunuen">Ver detalles</a>
+          </article>
+
+          <article class="room-card">
+            <div class="room-image"></div>
+            <h4>Patzcuaro</h4>
+            <p>Inspiración: Tradición y cantera. Ideal para descansar con estilo.</p>
+            <a class="btn-secondary" href="habitaciones.html#patzcuaro">Ver detalles</a>
+          </article>
+
+          <article class="room-card">
+            <div class="room-image"></div>
+            <h4>Coeneo</h4>
+            <p>Inspiración: Textiles y tramas. Ideal para descansar con estilo.</p>
+            <a class="btn-secondary" href="habitaciones.html#coeneo">Ver detalles</a>
+          </article>
+
+          <article class="room-card">
+            <div class="room-image"></div>
+            <h4>Janitzio</h4>
+            <p>Inspiración: Noche y velas. Ideal para descansar con estilo.</p>
+            <a class="btn-secondary" href="habitaciones.html#janitzio">Ver detalles</a>
+          </article>
+
         </div>
+      </div>
     </section>
 
-    
     <section class="features">
-        <div class="container">
-            <h2>¿Por qué elegir Quinta Dalam?</h2>
-            <div class="features-grid">
-                <div class="feature">
-                 
-                </div>
-            </div>
+      <div class="container">
+        <h2>Comodidades</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">🛏️</div>
+            <h4>Confort</h4>
+            <p>Camas cómodas, espacios agradables y detalles pensados para tu descanso.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">📶</div>
+            <h4>Wi-Fi</h4>
+            <p>Conectividad para trabajo o entretenimiento durante tu estancia.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🧼</div>
+            <h4>Limpieza</h4>
+            <p>Estándares altos de higiene y orden en todas las áreas.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🤝</div>
+            <h4>Atención</h4>
+            <p>Trato cálido y soporte para ayudarte en lo que necesites.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-   
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Hotel Quinta Dalam</h4>
-                    <p>Tu experiencia perfecta de hospitalidad</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="habitaciones.html">Habitaciones</a></li>
-                        <li><a href="reservaciones.html">Reservaciones</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-               
-    <script src="js/main.js"></script>
+    <section class="cta-section">
+      <div class="container">
+        <h2>¿Listo para reservar?</h2>
+        <p>Completa el formulario y confirma tu estancia.</p>
+        <a href="reservaciones.html" class="btn-primary-large">Ir a Reservaciones</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Lo que nos diferencia</h4>
+          <p>Somos un hotel que busca representar lo más icónico de Michoacán con una experiencia cálida, elegante y cómoda.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="habitaciones.html">Habitaciones</a></li>
+            <li><a href="reservaciones.html">Reservaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Atención</h4>
+          <p>Horario: 8:00–22:00</p>
+          <p>WhatsApp: +52 000 000 0000</p>
+          <p>Correo: contacto@quintadalam.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Quinta Dalam. Todos los derechos reservados.</div>
+    </div>
+  </footer>
 </body>
 </html>

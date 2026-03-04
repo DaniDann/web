@@ -1,66 +1,210 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Habitaciones del Hotel Quinta Dalam - Conoce nuestras 15 habitaciones">
-    <title>Habitaciones - Hotel Quinta Dalam</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sistema de Reservaciones - Hotel Quinta Dalam" />
+  <title>Reservaciones - Hotel Quinta Dalam</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h1>Quinta Dalam</h1>
+        <p class="tagline">Tu hogar lejos de casa</p>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="habitaciones.html">Habitaciones</a></li>
+        <li><a href="reservaciones.html" class="active">Reservaciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a class="btn-reserva" href="reservaciones.html">Reservar Ahora</a>
+    </div>
+  </nav>
+</header>
 
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <div class="logo">
-                    <h1>Quinta Dalam</h1>
-                    <p class="tagline">Tu hogar lejos de casa</p>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="habitaciones.html" class="active">Habitaciones</a></li>
-                    <li><a href="reservaciones.html">Reservaciones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-                <button class="btn-reserva">Reservar Ahora</button>
-            </div>
-        </nav>
-    </header>
-
-    
+  <main id="contenido">
     <section class="page-header">
-        <div class="container">
-            <h1>Nuestras Habitaciones</h1>
-            <p>15 habitaciones diseñadas para tu máxima comodidad</p>
-        </div>
+      <div class="container">
+        <h1>Reservaciones</h1>
+        <p>Completa tus datos y selecciona la habitación. (HTML + CSS, sin JavaScript por ahora)</p>
+      </div>
     </section>
 
-   
-    <section class="rooms-listing">
-        <div class="container">
-            
-      
+    <section class="reservation-section">
+      <div class="container" style="display:grid;gap:18px;">
+        <div class="availability-panel">
+          <h2>Datos de la estancia</h2>
+          <form action="#" method="post" autocomplete="on">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="habitacion">Habitación</label>
+                <select id="habitacion" name="habitacion" required>
+                  <option value="" selected disabled>Selecciona una habitación</option>
+                  <option value="tzintzunzan">Tzintzunzan</option>
+<option value="paracho">Paracho</option>
+<option value="yunuen">Yunuen</option>
+<option value="patzcuaro">Patzcuaro</option>
+<option value="coeneo">Coeneo</option>
+<option value="janitzio">Janitzio</option>
+<option value="suite-quencio">Suite Quencio</option>
+<option value="morelia">Morelia</option>
+<option value="tacambaro">Tacambaro</option>
+<option value="uruapan">Uruapan</option>
+<option value="tlalpujagua">Tlalpujagua</option>
+<option value="cuitzeo">Cuitzeo</option>
+<option value="cuanajo">Cuanajo</option>
+                </select>
+                <div class="help-text">Todas las habitaciones son temáticas (inspiración cultural).</div>
+              </div>
+              <div class="form-group">
+                <label for="checkin">Check‑in</label>
+                <input id="checkin" name="checkin" type="date" required />
+              </div>
+              <div class="form-group">
+                <label for="checkout">Check‑out</label>
+                <input id="checkout" name="checkout" type="date" required />
+              </div>
+              <div class="form-group">
+                <label for="huespedes">Huéspedes</label>
+                <input id="huespedes" name="huespedes" type="number" min="1" max="6" value="2" required />
+              </div>
+            </div>
 
-    
-    <section class="cta-section">
-        <div class="container">
-            <h2>¿Listo para reservar tu habitación?</h2>
-            <p>Consulta disponibilidad en tiempo real y asegura tu estancia</p>
-            <a href="reservaciones.html" class="btn-primary-large">Ver Disponibilidad</a>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tipo-cama">Tipo de cama</label>
+                <select id="tipo-cama" name="tipo_cama" required>
+                  <option value="" selected disabled>Elige una opción</option>
+                  <option value="matrimonial">Matrimonial</option>
+                  <option value="queen">Queen</option>
+                  <option value="king">King</option>
+                  <option value="doble">Doble (2 camas)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="comentarios">Comentarios</label>
+                <input id="comentarios" name="comentarios" type="text" placeholder="Ej. llegada tardía, alergias, etc." />
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn-secondary" type="reset">Limpiar</button>
+              <button class="btn-primary" type="submit">Continuar</button>
+            </div>
+          </form>
         </div>
+
+        <div class="contact-form-section">
+          <h2>Datos del huésped</h2>
+          <form action="#" method="post" autocomplete="on">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre" />
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input id="apellido" name="apellido" type="text" required placeholder="Tu apellido" />
+              </div>
+              <div class="form-group">
+                <label for="correo">Correo</label>
+                <input id="correo" name="correo" type="email" required placeholder="tucorreo@email.com" />
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" name="telefono" type="tel" required placeholder="+52 ..." />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label for="direccion">Dirección (opcional)</label>
+                <input id="direccion" name="direccion" type="text" placeholder="Calle, número, colonia" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="metodo">Método de pago (para confirmar)</label>
+                <select id="metodo" name="metodo_pago" required>
+                  <option value="" selected disabled>Selecciona</option>
+                  <option value="efectivo">Efectivo (pago al llegar)</option>
+                  <option value="transferencia">Transferencia</option>
+                  <option value="tarjeta">Tarjeta (al llegar)</option>
+                </select>
+                <div class="help-text">La confirmación final puede requerir contacto del hotel.</div>
+              </div>
+              <div class="form-group">
+                <label for="folio">Folio/Referencia (si aplica)</label>
+                <input id="folio" name="folio" type="text" placeholder="Ej. transferencia / referencia" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label class="terms-checkbox">
+                  <input type="checkbox" name="terminos" required />
+                  <span>Acepto los <a href="#">términos y condiciones</a> y la política de privacidad.</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn-secondary" type="reset">Limpiar</button>
+              <button class="btn-primary" type="submit">Enviar solicitud</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="faq-section">
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-item">
+            <h4>¿La temática indica ubicación?</h4>
+            <p>No. La temática es inspiracional y decorativa, no representa la ubicación real.</p>
+          </div>
+          <div class="faq-item">
+            <h4>¿Cómo se confirma la reservación?</h4>
+            <p>Al enviar tu solicitud, nuestro equipo te contacta para confirmar disponibilidad y detalles.</p>
+          </div>
+          <div class="faq-item">
+            <h4>¿Puedo solicitar llegada tarde?</h4>
+            <p>Sí, agrega un comentario en el formulario y te apoyamos.</p>
+          </div>
+        </div>
+      </div>
     </section>
+  </main>
 
-   
-                    <h4>Enlaces Rápidos</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="habitaciones.html">Habitaciones</a></li>
-                        <li><a href="reservaciones.html">Reservaciones</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                
-
-    <script src="js/main.js"></script>
+  <footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Lo que nos diferencia</h4>
+        <p>Somos un hotel que busca representar lo más icónico de Michoacán con una experiencia cálida, elegante y cómoda.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="habitaciones.html">Habitaciones</a></li>
+          <li><a href="reservaciones.html">Reservaciones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Atención</h4>
+        <p>Horario: 8:00–22:00</p>
+        <p>WhatsApp: +52 000 000 0000</p>
+        <p>Correo: contacto@quintadalam.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Quinta Dalam. Todos los derechos reservados.</div>
+  </div>
+</footer>
 </body>
 </html>
