@@ -1,66 +1,925 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Habitaciones del Hotel Quinta Dalam - Conoce nuestras 15 habitaciones">
-    <title>Habitaciones - Hotel Quinta Dalam</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Habitaciones del Hotel Quinta Dalam - Conoce nuestras habitaciones temáticas" />
+  <title>Habitaciones - Hotel Quinta Dalam</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h1>Quinta Dalam</h1>
+        <p class="tagline">Tu hogar lejos de casa</p>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="habitaciones.html" class="active">Habitaciones</a></li>
+        <li><a href="reservaciones.html">Reservaciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a class="btn-reserva" href="reservaciones.html">Reservar Ahora</a>
+    </div>
+  </nav>
+</header>
 
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <div class="logo">
-                    <h1>Quinta Dalam</h1>
-                    <p class="tagline">Tu hogar lejos de casa</p>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="habitaciones.html" class="active">Habitaciones</a></li>
-                    <li><a href="reservaciones.html">Reservaciones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-                <button class="btn-reserva">Reservar Ahora</button>
-            </div>
-        </nav>
-    </header>
-
-    
+  <main id="contenido">
     <section class="page-header">
-        <div class="container">
-            <h1>Nuestras Habitaciones</h1>
-            <p>15 habitaciones diseñadas para tu máxima comodidad</p>
-        </div>
+      <div class="container">
+        <h1>Nuestras Habitaciones</h1>
+        <p>Habitaciones temáticas inspiradas en municipios de Michoacán (solo temática, no ubicación).</p>
+      </div>
     </section>
 
-   
     <section class="rooms-listing">
-        <div class="container">
-            
-      
+      <div class="container">
+        
+    <article class="room-detail" id="tzintzunzan" style="border-left: 6px solid #7a3e00;">
+      <div class="room-gallery">
+        <div class="carousel" aria-label="Carrusel Tzintzunzan">
+          <input type="radio" name="c-tzintzunzan" id="c-tzintzunzan-1" checked>
+          <input type="radio" name="c-tzintzunzan" id="c-tzintzunzan-2">
+          <input type="radio" name="c-tzintzunzan" id="c-tzintzunzan-3">
 
-    
-    <section class="cta-section">
-        <div class="container">
-            <h2>¿Listo para reservar tu habitación?</h2>
-            <p>Consulta disponibilidad en tiempo real y asegura tu estancia</p>
-            <a href="reservaciones.html" class="btn-primary-large">Ver Disponibilidad</a>
+          <div class="carousel-track">
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #7a3e00aa, rgba(17,24,39,.78));">
+              <div class="slide-label">Tzintzunzan · Vista 1</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, rgba(17,24,39,.55), #7a3e00bb);">
+              <div class="slide-label">Tzintzunzan · Vista 2</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #7a3e00bb, rgba(17,24,39,.70));">
+              <div class="slide-label">Tzintzunzan · Detalle</div>
+            </div>
+          </div>
+
+          <div class="carousel-nav" aria-hidden="true">
+            <label class="carousel-btn prev" for="c-tzintzunzan-1">‹</label>
+            <label class="carousel-btn next" for="c-tzintzunzan-2">›</label>
+          </div>
+
+          <div class="carousel-dots" aria-label="Seleccionar vista">
+            <label class="carousel-dot" for="c-tzintzunzan-1"></label>
+            <label class="carousel-dot" for="c-tzintzunzan-2"></label>
+            <label class="carousel-dot" for="c-tzintzunzan-3"></label>
+          </div>
         </div>
+      </div>
+
+      <div class="room-info">
+        <span class="room-badge">Inspiración: Cobre y lacas</span>
+        <h2>Tzintzunzan</h2>
+        <p>Una habitación con identidad propia, pensada para un descanso cómodo y elegante.</p>
+
+        <div class="room-pricing" aria-label="Precio">
+          <div class="price">$1,199</div>
+          <div class="per-night">por noche (referencial)</div>
+        </div>
+
+        <div class="room-amenities">
+          <h4>Incluye</h4>
+          <ul>
+            <li>Wi‑Fi</li><li>Aire acondicionado</li><li>Baño privado</li><li>TV</li><li>Amenidades</li><li>Toallas</li>
+          </ul>
+        </div>
+
+        <div class="room-actions">
+          <a class="btn-primary" href="reservaciones.html?habitacion=tzintzunzan">Reservar esta</a>
+          <a class="btn-secondary" href="#contenido">Volver arriba</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="room-detail" id="paracho" style="border-left: 6px solid #7b1e2b;">
+      <div class="room-gallery">
+        <div class="carousel" aria-label="Carrusel Paracho">
+          <input type="radio" name="c-paracho" id="c-paracho-1" checked>
+          <input type="radio" name="c-paracho" id="c-paracho-2">
+          <input type="radio" name="c-paracho" id="c-paracho-3">
+
+          <div class="carousel-track">
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #7b1e2baa, rgba(17,24,39,.78));">
+              <div class="slide-label">Paracho · Vista 1</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, rgba(17,24,39,.55), #7b1e2bbb);">
+              <div class="slide-label">Paracho · Vista 2</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #7b1e2bbb, rgba(17,24,39,.70));">
+              <div class="slide-label">Paracho · Detalle</div>
+            </div>
+          </div>
+
+          <div class="carousel-nav" aria-hidden="true">
+            <label class="carousel-btn prev" for="c-paracho-1">‹</label>
+            <label class="carousel-btn next" for="c-paracho-2">›</label>
+          </div>
+
+          <div class="carousel-dots" aria-label="Seleccionar vista">
+            <label class="carousel-dot" for="c-paracho-1"></label>
+            <label class="carousel-dot" for="c-paracho-2"></label>
+            <label class="carousel-dot" for="c-paracho-3"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-info">
+        <span class="room-badge">Inspiración: Guitarras y madera</span>
+        <h2>Paracho</h2>
+        <p>Una habitación con identidad propia, pensada para un descanso cómodo y elegante.</p>
+
+        <div class="room-pricing" aria-label="Precio">
+          <div class="price">$1,199</div>
+          <div class="per-night">por noche (referencial)</div>
+        </div>
+
+        <div class="room-amenities">
+          <h4>Incluye</h4>
+          <ul>
+            <li>Wi‑Fi</li><li>Aire acondicionado</li><li>Baño privado</li><li>TV</li><li>Amenidades</li><li>Toallas</li>
+          </ul>
+        </div>
+
+        <div class="room-actions">
+          <a class="btn-primary" href="reservaciones.html?habitacion=paracho">Reservar esta</a>
+          <a class="btn-secondary" href="#contenido">Volver arriba</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="room-detail" id="yunuen" style="border-left: 6px solid #0b7285;">
+      <div class="room-gallery">
+        <div class="carousel" aria-label="Carrusel Yunuen">
+          <input type="radio" name="c-yunuen" id="c-yunuen-1" checked>
+          <input type="radio" name="c-yunuen" id="c-yunuen-2">
+          <input type="radio" name="c-yunuen" id="c-yunuen-3">
+
+          <div class="carousel-track">
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #0b7285aa, rgba(17,24,39,.78));">
+              <div class="slide-label">Yunuen · Vista 1</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, rgba(17,24,39,.55), #0b7285bb);">
+              <div class="slide-label">Yunuen · Vista 2</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #0b7285bb, rgba(17,24,39,.70));">
+              <div class="slide-label">Yunuen · Detalle</div>
+            </div>
+          </div>
+
+          <div class="carousel-nav" aria-hidden="true">
+            <label class="carousel-btn prev" for="c-yunuen-1">‹</label>
+            <label class="carousel-btn next" for="c-yunuen-2">›</label>
+          </div>
+
+          <div class="carousel-dots" aria-label="Seleccionar vista">
+            <label class="carousel-dot" for="c-yunuen-1"></label>
+            <label class="carousel-dot" for="c-yunuen-2"></label>
+            <label class="carousel-dot" for="c-yunuen-3"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-info">
+        <span class="room-badge">Inspiración: Lago y calma</span>
+        <h2>Yunuen</h2>
+        <p>Una habitación con identidad propia, pensada para un descanso cómodo y elegante.</p>
+
+        <div class="room-pricing" aria-label="Precio">
+          <div class="price">$1,199</div>
+          <div class="per-night">por noche (referencial)</div>
+        </div>
+
+        <div class="room-amenities">
+          <h4>Incluye</h4>
+          <ul>
+            <li>Wi‑Fi</li><li>Aire acondicionado</li><li>Baño privado</li><li>TV</li><li>Amenidades</li><li>Toallas</li>
+          </ul>
+        </div>
+
+        <div class="room-actions">
+          <a class="btn-primary" href="reservaciones.html?habitacion=yunuen">Reservar esta</a>
+          <a class="btn-secondary" href="#contenido">Volver arriba</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="room-detail" id="patzcuaro" style="border-left: 6px solid #2b8a3e;">
+      <div class="room-gallery">
+        <div class="carousel" aria-label="Carrusel Patzcuaro">
+          <input type="radio" name="c-patzcuaro" id="c-patzcuaro-1" checked>
+          <input type="radio" name="c-patzcuaro" id="c-patzcuaro-2">
+          <input type="radio" name="c-patzcuaro" id="c-patzcuaro-3">
+
+          <div class="carousel-track">
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #2b8a3eaa, rgba(17,24,39,.78));">
+              <div class="slide-label">Patzcuaro · Vista 1</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, rgba(17,24,39,.55), #2b8a3ebb);">
+              <div class="slide-label">Patzcuaro · Vista 2</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #2b8a3ebb, rgba(17,24,39,.70));">
+              <div class="slide-label">Patzcuaro · Detalle</div>
+            </div>
+          </div>
+
+          <div class="carousel-nav" aria-hidden="true">
+            <label class="carousel-btn prev" for="c-patzcuaro-1">‹</label>
+            <label class="carousel-btn next" for="c-patzcuaro-2">›</label>
+          </div>
+
+          <div class="carousel-dots" aria-label="Seleccionar vista">
+            <label class="carousel-dot" for="c-patzcuaro-1"></label>
+            <label class="carousel-dot" for="c-patzcuaro-2"></label>
+            <label class="carousel-dot" for="c-patzcuaro-3"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-info">
+        <span class="room-badge">Inspiración: Tradición y cantera</span>
+        <h2>Patzcuaro</h2>
+        <p>Una habitación con identidad propia, pensada para un descanso cómodo y elegante.</p>
+
+        <div class="room-pricing" aria-label="Precio">
+          <div class="price">$1,199</div>
+          <div class="per-night">por noche (referencial)</div>
+        </div>
+
+        <div class="room-amenities">
+          <h4>Incluye</h4>
+          <ul>
+            <li>Wi‑Fi</li><li>Aire acondicionado</li><li>Baño privado</li><li>TV</li><li>Amenidades</li><li>Toallas</li>
+          </ul>
+        </div>
+
+        <div class="room-actions">
+          <a class="btn-primary" href="reservaciones.html?habitacion=patzcuaro">Reservar esta</a>
+          <a class="btn-secondary" href="#contenido">Volver arriba</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="room-detail" id="coeneo" style="border-left: 6px solid #5f3dc4;">
+      <div class="room-gallery">
+        <div class="carousel" aria-label="Carrusel Coeneo">
+          <input type="radio" name="c-coeneo" id="c-coeneo-1" checked>
+          <input type="radio" name="c-coeneo" id="c-coeneo-2">
+          <input type="radio" name="c-coeneo" id="c-coeneo-3">
+
+          <div class="carousel-track">
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #5f3dc4aa, rgba(17,24,39,.78));">
+              <div class="slide-label">Coeneo · Vista 1</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, rgba(17,24,39,.55), #5f3dc4bb);">
+              <div class="slide-label">Coeneo · Vista 2</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #5f3dc4bb, rgba(17,24,39,.70));">
+              <div class="slide-label">Coeneo · Detalle</div>
+            </div>
+          </div>
+
+          <div class="carousel-nav" aria-hidden="true">
+            <label class="carousel-btn prev" for="c-coeneo-1">‹</label>
+            <label class="carousel-btn next" for="c-coeneo-2">›</label>
+          </div>
+
+          <div class="carousel-dots" aria-label="Seleccionar vista">
+            <label class="carousel-dot" for="c-coeneo-1"></label>
+            <label class="carousel-dot" for="c-coeneo-2"></label>
+            <label class="carousel-dot" for="c-coeneo-3"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-info">
+        <span class="room-badge">Inspiración: Textiles y tramas</span>
+        <h2>Coeneo</h2>
+        <p>Una habitación con identidad propia, pensada para un descanso cómodo y elegante.</p>
+
+        <div class="room-pricing" aria-label="Precio">
+          <div class="price">$1,199</div>
+          <div class="per-night">por noche (referencial)</div>
+        </div>
+
+        <div class="room-amenities">
+          <h4>Incluye</h4>
+          <ul>
+            <li>Wi‑Fi</li><li>Aire acondicionado</li><li>Baño privado</li><li>TV</li><li>Amenidades</li><li>Toallas</li>
+          </ul>
+        </div>
+
+        <div class="room-actions">
+          <a class="btn-primary" href="reservaciones.html?habitacion=coeneo">Reservar esta</a>
+          <a class="btn-secondary" href="#contenido">Volver arriba</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="room-detail" id="janitzio" style="border-left: 6px solid #364fc7;">
+      <div class="room-gallery">
+        <div class="carousel" aria-label="Carrusel Janitzio">
+          <input type="radio" name="c-janitzio" id="c-janitzio-1" checked>
+          <input type="radio" name="c-janitzio" id="c-janitzio-2">
+          <input type="radio" name="c-janitzio" id="c-janitzio-3">
+
+          <div class="carousel-track">
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #364fc7aa, rgba(17,24,39,.78));">
+              <div class="slide-label">Janitzio · Vista 1</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, rgba(17,24,39,.55), #364fc7bb);">
+              <div class="slide-label">Janitzio · Vista 2</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #364fc7bb, rgba(17,24,39,.70));">
+              <div class="slide-label">Janitzio · Detalle</div>
+            </div>
+          </div>
+
+          <div class="carousel-nav" aria-hidden="true">
+            <label class="carousel-btn prev" for="c-janitzio-1">‹</label>
+            <label class="carousel-btn next" for="c-janitzio-2">›</label>
+          </div>
+
+          <div class="carousel-dots" aria-label="Seleccionar vista">
+            <label class="carousel-dot" for="c-janitzio-1"></label>
+            <label class="carousel-dot" for="c-janitzio-2"></label>
+            <label class="carousel-dot" for="c-janitzio-3"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-info">
+        <span class="room-badge">Inspiración: Noche y velas</span>
+        <h2>Janitzio</h2>
+        <p>Una habitación con identidad propia, pensada para un descanso cómodo y elegante.</p>
+
+        <div class="room-pricing" aria-label="Precio">
+          <div class="price">$1,199</div>
+          <div class="per-night">por noche (referencial)</div>
+        </div>
+
+        <div class="room-amenities">
+          <h4>Incluye</h4>
+          <ul>
+            <li>Wi‑Fi</li><li>Aire acondicionado</li><li>Baño privado</li><li>TV</li><li>Amenidades</li><li>Toallas</li>
+          </ul>
+        </div>
+
+        <div class="room-actions">
+          <a class="btn-primary" href="reservaciones.html?habitacion=janitzio">Reservar esta</a>
+          <a class="btn-secondary" href="#contenido">Volver arriba</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="room-detail" id="suite-quencio" style="border-left: 6px solid #c2255c;">
+      <div class="room-gallery">
+        <div class="carousel" aria-label="Carrusel Suite Quencio">
+          <input type="radio" name="c-suite-quencio" id="c-suite-quencio-1" checked>
+          <input type="radio" name="c-suite-quencio" id="c-suite-quencio-2">
+          <input type="radio" name="c-suite-quencio" id="c-suite-quencio-3">
+
+          <div class="carousel-track">
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #c2255caa, rgba(17,24,39,.78));">
+              <div class="slide-label">Suite Quencio · Vista 1</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, rgba(17,24,39,.55), #c2255cbb);">
+              <div class="slide-label">Suite Quencio · Vista 2</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #c2255cbb, rgba(17,24,39,.70));">
+              <div class="slide-label">Suite Quencio · Detalle</div>
+            </div>
+          </div>
+
+          <div class="carousel-nav" aria-hidden="true">
+            <label class="carousel-btn prev" for="c-suite-quencio-1">‹</label>
+            <label class="carousel-btn next" for="c-suite-quencio-2">›</label>
+          </div>
+
+          <div class="carousel-dots" aria-label="Seleccionar vista">
+            <label class="carousel-dot" for="c-suite-quencio-1"></label>
+            <label class="carousel-dot" for="c-suite-quencio-2"></label>
+            <label class="carousel-dot" for="c-suite-quencio-3"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-info">
+        <span class="room-badge">Inspiración: Suite premium</span>
+        <h2>Suite Quencio</h2>
+        <p>Una habitación con identidad propia, pensada para un descanso cómodo y elegante.</p>
+
+        <div class="room-pricing" aria-label="Precio">
+          <div class="price">$1,899</div>
+          <div class="per-night">por noche (referencial)</div>
+        </div>
+
+        <div class="room-amenities">
+          <h4>Incluye</h4>
+          <ul>
+            <li>Wi‑Fi</li><li>Sala pequeña</li><li>Cama King</li><li>Baño premium</li><li>TV</li><li>Amenidades</li>
+          </ul>
+        </div>
+
+        <div class="room-actions">
+          <a class="btn-primary" href="reservaciones.html?habitacion=suite-quencio">Reservar esta</a>
+          <a class="btn-secondary" href="#contenido">Volver arriba</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="room-detail" id="morelia" style="border-left: 6px solid #1c7ed6;">
+      <div class="room-gallery">
+        <div class="carousel" aria-label="Carrusel Morelia">
+          <input type="radio" name="c-morelia" id="c-morelia-1" checked>
+          <input type="radio" name="c-morelia" id="c-morelia-2">
+          <input type="radio" name="c-morelia" id="c-morelia-3">
+
+          <div class="carousel-track">
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #1c7ed6aa, rgba(17,24,39,.78));">
+              <div class="slide-label">Morelia · Vista 1</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, rgba(17,24,39,.55), #1c7ed6bb);">
+              <div class="slide-label">Morelia · Vista 2</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #1c7ed6bb, rgba(17,24,39,.70));">
+              <div class="slide-label">Morelia · Detalle</div>
+            </div>
+          </div>
+
+          <div class="carousel-nav" aria-hidden="true">
+            <label class="carousel-btn prev" for="c-morelia-1">‹</label>
+            <label class="carousel-btn next" for="c-morelia-2">›</label>
+          </div>
+
+          <div class="carousel-dots" aria-label="Seleccionar vista">
+            <label class="carousel-dot" for="c-morelia-1"></label>
+            <label class="carousel-dot" for="c-morelia-2"></label>
+            <label class="carousel-dot" for="c-morelia-3"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-info">
+        <span class="room-badge">Inspiración: Cantera rosa</span>
+        <h2>Morelia</h2>
+        <p>Una habitación con identidad propia, pensada para un descanso cómodo y elegante.</p>
+
+        <div class="room-pricing" aria-label="Precio">
+          <div class="price">$1,199</div>
+          <div class="per-night">por noche (referencial)</div>
+        </div>
+
+        <div class="room-amenities">
+          <h4>Incluye</h4>
+          <ul>
+            <li>Wi‑Fi</li><li>Aire acondicionado</li><li>Baño privado</li><li>TV</li><li>Amenidades</li><li>Toallas</li>
+          </ul>
+        </div>
+
+        <div class="room-actions">
+          <a class="btn-primary" href="reservaciones.html?habitacion=morelia">Reservar esta</a>
+          <a class="btn-secondary" href="#contenido">Volver arriba</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="room-detail" id="tacambaro" style="border-left: 6px solid #e67700;">
+      <div class="room-gallery">
+        <div class="carousel" aria-label="Carrusel Tacambaro">
+          <input type="radio" name="c-tacambaro" id="c-tacambaro-1" checked>
+          <input type="radio" name="c-tacambaro" id="c-tacambaro-2">
+          <input type="radio" name="c-tacambaro" id="c-tacambaro-3">
+
+          <div class="carousel-track">
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #e67700aa, rgba(17,24,39,.78));">
+              <div class="slide-label">Tacambaro · Vista 1</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, rgba(17,24,39,.55), #e67700bb);">
+              <div class="slide-label">Tacambaro · Vista 2</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #e67700bb, rgba(17,24,39,.70));">
+              <div class="slide-label">Tacambaro · Detalle</div>
+            </div>
+          </div>
+
+          <div class="carousel-nav" aria-hidden="true">
+            <label class="carousel-btn prev" for="c-tacambaro-1">‹</label>
+            <label class="carousel-btn next" for="c-tacambaro-2">›</label>
+          </div>
+
+          <div class="carousel-dots" aria-label="Seleccionar vista">
+            <label class="carousel-dot" for="c-tacambaro-1"></label>
+            <label class="carousel-dot" for="c-tacambaro-2"></label>
+            <label class="carousel-dot" for="c-tacambaro-3"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-info">
+        <span class="room-badge">Inspiración: Campo y calidez</span>
+        <h2>Tacambaro</h2>
+        <p>Una habitación con identidad propia, pensada para un descanso cómodo y elegante.</p>
+
+        <div class="room-pricing" aria-label="Precio">
+          <div class="price">$1,199</div>
+          <div class="per-night">por noche (referencial)</div>
+        </div>
+
+        <div class="room-amenities">
+          <h4>Incluye</h4>
+          <ul>
+            <li>Wi‑Fi</li><li>Aire acondicionado</li><li>Baño privado</li><li>TV</li><li>Amenidades</li><li>Toallas</li>
+          </ul>
+        </div>
+
+        <div class="room-actions">
+          <a class="btn-primary" href="reservaciones.html?habitacion=tacambaro">Reservar esta</a>
+          <a class="btn-secondary" href="#contenido">Volver arriba</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="room-detail" id="uruapan" style="border-left: 6px solid #2f9e44;">
+      <div class="room-gallery">
+        <div class="carousel" aria-label="Carrusel Uruapan">
+          <input type="radio" name="c-uruapan" id="c-uruapan-1" checked>
+          <input type="radio" name="c-uruapan" id="c-uruapan-2">
+          <input type="radio" name="c-uruapan" id="c-uruapan-3">
+
+          <div class="carousel-track">
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #2f9e44aa, rgba(17,24,39,.78));">
+              <div class="slide-label">Uruapan · Vista 1</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, rgba(17,24,39,.55), #2f9e44bb);">
+              <div class="slide-label">Uruapan · Vista 2</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #2f9e44bb, rgba(17,24,39,.70));">
+              <div class="slide-label">Uruapan · Detalle</div>
+            </div>
+          </div>
+
+          <div class="carousel-nav" aria-hidden="true">
+            <label class="carousel-btn prev" for="c-uruapan-1">‹</label>
+            <label class="carousel-btn next" for="c-uruapan-2">›</label>
+          </div>
+
+          <div class="carousel-dots" aria-label="Seleccionar vista">
+            <label class="carousel-dot" for="c-uruapan-1"></label>
+            <label class="carousel-dot" for="c-uruapan-2"></label>
+            <label class="carousel-dot" for="c-uruapan-3"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-info">
+        <span class="room-badge">Inspiración: Bosque y frescura</span>
+        <h2>Uruapan</h2>
+        <p>Una habitación con identidad propia, pensada para un descanso cómodo y elegante.</p>
+
+        <div class="room-pricing" aria-label="Precio">
+          <div class="price">$1,199</div>
+          <div class="per-night">por noche (referencial)</div>
+        </div>
+
+        <div class="room-amenities">
+          <h4>Incluye</h4>
+          <ul>
+            <li>Wi‑Fi</li><li>Aire acondicionado</li><li>Baño privado</li><li>TV</li><li>Amenidades</li><li>Toallas</li>
+          </ul>
+        </div>
+
+        <div class="room-actions">
+          <a class="btn-primary" href="reservaciones.html?habitacion=uruapan">Reservar esta</a>
+          <a class="btn-secondary" href="#contenido">Volver arriba</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="room-detail" id="tlalpujagua" style="border-left: 6px solid #0c8599;">
+      <div class="room-gallery">
+        <div class="carousel" aria-label="Carrusel Tlalpujagua">
+          <input type="radio" name="c-tlalpujagua" id="c-tlalpujagua-1" checked>
+          <input type="radio" name="c-tlalpujagua" id="c-tlalpujagua-2">
+          <input type="radio" name="c-tlalpujagua" id="c-tlalpujagua-3">
+
+          <div class="carousel-track">
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #0c8599aa, rgba(17,24,39,.78));">
+              <div class="slide-label">Tlalpujagua · Vista 1</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, rgba(17,24,39,.55), #0c8599bb);">
+              <div class="slide-label">Tlalpujagua · Vista 2</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #0c8599bb, rgba(17,24,39,.70));">
+              <div class="slide-label">Tlalpujagua · Detalle</div>
+            </div>
+          </div>
+
+          <div class="carousel-nav" aria-hidden="true">
+            <label class="carousel-btn prev" for="c-tlalpujagua-1">‹</label>
+            <label class="carousel-btn next" for="c-tlalpujagua-2">›</label>
+          </div>
+
+          <div class="carousel-dots" aria-label="Seleccionar vista">
+            <label class="carousel-dot" for="c-tlalpujagua-1"></label>
+            <label class="carousel-dot" for="c-tlalpujagua-2"></label>
+            <label class="carousel-dot" for="c-tlalpujagua-3"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-info">
+        <span class="room-badge">Inspiración: Esferas y brillo</span>
+        <h2>Tlalpujagua</h2>
+        <p>Una habitación con identidad propia, pensada para un descanso cómodo y elegante.</p>
+
+        <div class="room-pricing" aria-label="Precio">
+          <div class="price">$1,199</div>
+          <div class="per-night">por noche (referencial)</div>
+        </div>
+
+        <div class="room-amenities">
+          <h4>Incluye</h4>
+          <ul>
+            <li>Wi‑Fi</li><li>Aire acondicionado</li><li>Baño privado</li><li>TV</li><li>Amenidades</li><li>Toallas</li>
+          </ul>
+        </div>
+
+        <div class="room-actions">
+          <a class="btn-primary" href="reservaciones.html?habitacion=tlalpujagua">Reservar esta</a>
+          <a class="btn-secondary" href="#contenido">Volver arriba</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="room-detail" id="cuitzeo" style="border-left: 6px solid #495057;">
+      <div class="room-gallery">
+        <div class="carousel" aria-label="Carrusel Cuitzeo">
+          <input type="radio" name="c-cuitzeo" id="c-cuitzeo-1" checked>
+          <input type="radio" name="c-cuitzeo" id="c-cuitzeo-2">
+          <input type="radio" name="c-cuitzeo" id="c-cuitzeo-3">
+
+          <div class="carousel-track">
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #495057aa, rgba(17,24,39,.78));">
+              <div class="slide-label">Cuitzeo · Vista 1</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, rgba(17,24,39,.55), #495057bb);">
+              <div class="slide-label">Cuitzeo · Vista 2</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #495057bb, rgba(17,24,39,.70));">
+              <div class="slide-label">Cuitzeo · Detalle</div>
+            </div>
+          </div>
+
+          <div class="carousel-nav" aria-hidden="true">
+            <label class="carousel-btn prev" for="c-cuitzeo-1">‹</label>
+            <label class="carousel-btn next" for="c-cuitzeo-2">›</label>
+          </div>
+
+          <div class="carousel-dots" aria-label="Seleccionar vista">
+            <label class="carousel-dot" for="c-cuitzeo-1"></label>
+            <label class="carousel-dot" for="c-cuitzeo-2"></label>
+            <label class="carousel-dot" for="c-cuitzeo-3"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-info">
+        <span class="room-badge">Inspiración: Minimal clásico</span>
+        <h2>Cuitzeo</h2>
+        <p>Una habitación con identidad propia, pensada para un descanso cómodo y elegante.</p>
+
+        <div class="room-pricing" aria-label="Precio">
+          <div class="price">$1,199</div>
+          <div class="per-night">por noche (referencial)</div>
+        </div>
+
+        <div class="room-amenities">
+          <h4>Incluye</h4>
+          <ul>
+            <li>Wi‑Fi</li><li>Aire acondicionado</li><li>Baño privado</li><li>TV</li><li>Amenidades</li><li>Toallas</li>
+          </ul>
+        </div>
+
+        <div class="room-actions">
+          <a class="btn-primary" href="reservaciones.html?habitacion=cuitzeo">Reservar esta</a>
+          <a class="btn-secondary" href="#contenido">Volver arriba</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="room-detail" id="cuanajo" style="border-left: 6px solid #8f5a2a;">
+      <div class="room-gallery">
+        <div class="carousel" aria-label="Carrusel Cuanajo">
+          <input type="radio" name="c-cuanajo" id="c-cuanajo-1" checked>
+          <input type="radio" name="c-cuanajo" id="c-cuanajo-2">
+          <input type="radio" name="c-cuanajo" id="c-cuanajo-3">
+
+          <div class="carousel-track">
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #8f5a2aaa, rgba(17,24,39,.78));">
+              <div class="slide-label">Cuanajo · Vista 1</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, rgba(17,24,39,.55), #8f5a2abb);">
+              <div class="slide-label">Cuanajo · Vista 2</div>
+            </div>
+            <div class="carousel-slide" style="background:
+              radial-gradient(900px 500px at 20% 20%, rgba(255,255,255,.22), transparent 60%),
+              radial-gradient(700px 400px at 90% 10%, rgba(255,255,255,.12), transparent 60%),
+              linear-gradient(135deg, #8f5a2abb, rgba(17,24,39,.70));">
+              <div class="slide-label">Cuanajo · Detalle</div>
+            </div>
+          </div>
+
+          <div class="carousel-nav" aria-hidden="true">
+            <label class="carousel-btn prev" for="c-cuanajo-1">‹</label>
+            <label class="carousel-btn next" for="c-cuanajo-2">›</label>
+          </div>
+
+          <div class="carousel-dots" aria-label="Seleccionar vista">
+            <label class="carousel-dot" for="c-cuanajo-1"></label>
+            <label class="carousel-dot" for="c-cuanajo-2"></label>
+            <label class="carousel-dot" for="c-cuanajo-3"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-info">
+        <span class="room-badge">Inspiración: Tallado y madera</span>
+        <h2>Cuanajo</h2>
+        <p>Una habitación con identidad propia, pensada para un descanso cómodo y elegante.</p>
+
+        <div class="room-pricing" aria-label="Precio">
+          <div class="price">$1,199</div>
+          <div class="per-night">por noche (referencial)</div>
+        </div>
+
+        <div class="room-amenities">
+          <h4>Incluye</h4>
+          <ul>
+            <li>Wi‑Fi</li><li>Aire acondicionado</li><li>Baño privado</li><li>TV</li><li>Amenidades</li><li>Toallas</li>
+          </ul>
+        </div>
+
+        <div class="room-actions">
+          <a class="btn-primary" href="reservaciones.html?habitacion=cuanajo">Reservar esta</a>
+          <a class="btn-secondary" href="#contenido">Volver arriba</a>
+        </div>
+      </div>
+    </article>
+    
+      </div>
     </section>
 
-   
-                    <h4>Enlaces Rápidos</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="habitaciones.html">Habitaciones</a></li>
-                        <li><a href="reservaciones.html">Reservaciones</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                
+    <section class="cta-section">
+      <div class="container">
+        <h2>¿Listo para reservar tu habitación?</h2>
+        <p>Completa el formulario y te contactamos para confirmar.</p>
+        <a href="reservaciones.html" class="btn-primary-large">Ir a Reservaciones</a>
+      </div>
+    </section>
+  </main>
 
-    <script src="js/main.js"></script>
+  <footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Lo que nos diferencia</h4>
+        <p>Somos un hotel que busca representar lo más icónico de Michoacán con una experiencia cálida, elegante y cómoda.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="habitaciones.html">Habitaciones</a></li>
+          <li><a href="reservaciones.html">Reservaciones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Atención</h4>
+        <p>Horario: 8:00–22:00</p>
+        <p>WhatsApp: +52 000 000 0000</p>
+        <p>Correo: contacto@quintadalam.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Quinta Dalam. Todos los derechos reservados.</div>
+  </div>
+</footer>
 </body>
 </html>
