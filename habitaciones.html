@@ -3,208 +3,287 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sistema de Reservaciones - Hotel Quinta Dalam" />
-  <title>Reservaciones - Hotel Quinta Dalam</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Habitaciones temáticas de Hotel Quinta Dalam" />
+  <title>Habitaciones - Hotel Quinta Dalam</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
-<header>
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">
-        <h1>Quinta Dalam</h1>
-        <p class="tagline">Tu hogar lejos de casa</p>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <h1>Quinta Dalam</h1>
+          <p class="tagline">Tu hogar lejos de casa</p>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="habitaciones.html" class="active">Habitaciones</a></li>
+          <li><a href="reservaciones.html">Reservaciones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <a class="btn-reserva" href="reservaciones.html">Reservar Ahora</a>
       </div>
-      <ul class="nav-menu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="habitaciones.html">Habitaciones</a></li>
-        <li><a href="reservaciones.html" class="active">Reservaciones</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-      <a class="btn-reserva" href="reservaciones.html">Reservar Ahora</a>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 
   <main id="contenido">
     <section class="page-header">
       <div class="container">
-        <h1>Reservaciones</h1>
-        <p>Completa tus datos y selecciona la habitación. (HTML + CSS, sin JavaScript por ahora)</p>
+        <h1>Habitaciones</h1>
+        <p>Conoce nuestras habitaciones temáticas inspiradas en la identidad de Michoacán.</p>
       </div>
     </section>
 
-    <section class="reservation-section">
-      <div class="container" style="display:grid;gap:18px;">
-        <div class="availability-panel">
-          <h2>Datos de la estancia</h2>
-          <form action="#" method="post" autocomplete="on">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="habitacion">Habitación</label>
-                <select id="habitacion" name="habitacion" required>
-                  <option value="" selected disabled>Selecciona una habitación</option>
-                  <option value="tzintzunzan">Tzintzunzan</option>
-<option value="paracho">Paracho</option>
-<option value="yunuen">Yunuen</option>
-<option value="patzcuaro">Patzcuaro</option>
-<option value="coeneo">Coeneo</option>
-<option value="janitzio">Janitzio</option>
-<option value="suite-quencio">Suite Quencio</option>
-<option value="morelia">Morelia</option>
-<option value="tacambaro">Tacambaro</option>
-<option value="uruapan">Uruapan</option>
-<option value="tlalpujagua">Tlalpujagua</option>
-<option value="cuitzeo">Cuitzeo</option>
-<option value="cuanajo">Cuanajo</option>
-                </select>
-                <div class="help-text">Todas las habitaciones son temáticas (inspiración cultural).</div>
-              </div>
-              <div class="form-group">
-                <label for="checkin">Check‑in</label>
-                <input id="checkin" name="checkin" type="date" required />
-              </div>
-              <div class="form-group">
-                <label for="checkout">Check‑out</label>
-                <input id="checkout" name="checkout" type="date" required />
-              </div>
-              <div class="form-group">
-                <label for="huespedes">Huéspedes</label>
-                <input id="huespedes" name="huespedes" type="number" min="1" max="6" value="2" required />
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="tipo-cama">Tipo de cama</label>
-                <select id="tipo-cama" name="tipo_cama" required>
-                  <option value="" selected disabled>Elige una opción</option>
-                  <option value="matrimonial">Matrimonial</option>
-                  <option value="queen">Queen</option>
-                  <option value="king">King</option>
-                  <option value="doble">Doble (2 camas)</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="comentarios">Comentarios</label>
-                <input id="comentarios" name="comentarios" type="text" placeholder="Ej. llegada tardía, alergias, etc." />
-              </div>
-            </div>
-
-            <div class="form-actions">
-              <button class="btn-secondary" type="reset">Limpiar</button>
-              <button class="btn-primary" type="submit">Continuar</button>
-            </div>
-          </form>
+    <section class="rooms-preview">
+      <div class="container">
+        <h2>Explora nuestras opciones</h2>
+        <p class="subtitle">Cada habitación combina confort, diseño y una inspiración regional distinta.</p>
+        <div class="rooms-grid">
+          <article class="room-card">
+            <div class="room-image"></div>
+            <h4>Tzintzuntzan</h4>
+            <p>Ambiente cálido con detalles artesanales y capacidad para 2 huéspedes.</p>
+            <a class="btn-secondary" href="#tzintzuntzan">Ver detalles</a>
+          </article>
+          <article class="room-card">
+            <div class="room-image"></div>
+            <h4>Paracho</h4>
+            <p>Inspirada en la madera y la música tradicional. Ideal para 2 huéspedes.</p>
+            <a class="btn-secondary" href="#paracho">Ver detalles</a>
+          </article>
+          <article class="room-card">
+            <div class="room-image"></div>
+            <h4>Yunuén</h4>
+            <p>Estancia serena para hasta 3 huéspedes, con un estilo fresco y relajante.</p>
+            <a class="btn-secondary" href="#yunuen">Ver detalles</a>
+          </article>
+          <article class="room-card">
+            <div class="room-image"></div>
+            <h4>Pátzcuaro</h4>
+            <p>Diseño elegante con acentos tradicionales y capacidad para 3 personas.</p>
+            <a class="btn-secondary" href="#patzcuaro">Ver detalles</a>
+          </article>
+          <article class="room-card">
+            <div class="room-image"></div>
+            <h4>Janitzio</h4>
+            <p>Habitación íntima y sofisticada, recomendada para escapadas de pareja.</p>
+            <a class="btn-secondary" href="#janitzio">Ver detalles</a>
+          </article>
+          <article class="room-card">
+            <div class="room-image"></div>
+            <h4>Suite Quencio</h4>
+            <p>Nuestra opción más amplia, pensada para familias o grupos de hasta 4 huéspedes.</p>
+            <a class="btn-secondary" href="#suite-quencio">Ver detalles</a>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <div class="contact-form-section">
-          <h2>Datos del huésped</h2>
-          <form action="#" method="post" autocomplete="on">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre" />
-              </div>
-              <div class="form-group">
-                <label for="apellido">Apellido</label>
-                <input id="apellido" name="apellido" type="text" required placeholder="Tu apellido" />
-              </div>
-              <div class="form-group">
-                <label for="correo">Correo</label>
-                <input id="correo" name="correo" type="email" required placeholder="tucorreo@email.com" />
-              </div>
-              <div class="form-group">
-                <label for="telefono">Teléfono</label>
-                <input id="telefono" name="telefono" type="tel" required placeholder="+52 ..." />
-              </div>
+    <section class="rooms-listing">
+      <div class="container">
+        <article class="room-detail" id="tzintzuntzan">
+          <div class="room-info">
+            <span class="room-badge">Temática artesanal</span>
+            <h2>Habitación Tzintzuntzan</h2>
+            <p>Una habitación pensada para el descanso, con una atmósfera sobria y detalles que evocan tradición y calma.</p>
+            <div class="room-pricing">
+              <span class="price">$1,450 MXN</span>
+              <span class="per-night">por noche · hasta 2 huéspedes</span>
             </div>
-
-            <div class="form-row">
-              <div class="form-group full-width">
-                <label for="direccion">Dirección (opcional)</label>
-                <input id="direccion" name="direccion" type="text" placeholder="Calle, número, colonia" />
-              </div>
+            <div class="room-amenities">
+              <h4>Amenidades</h4>
+              <ul>
+                <li>Cama matrimonial</li>
+                <li>Wi‑Fi</li>
+                <li>Baño privado</li>
+                <li>TV</li>
+              </ul>
             </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="metodo">Método de pago (para confirmar)</label>
-                <select id="metodo" name="metodo_pago" required>
-                  <option value="" selected disabled>Selecciona</option>
-                  <option value="efectivo">Efectivo (pago al llegar)</option>
-                  <option value="transferencia">Transferencia</option>
-                  <option value="tarjeta">Tarjeta (al llegar)</option>
-                </select>
-                <div class="help-text">La confirmación final puede requerir contacto del hotel.</div>
-              </div>
-              <div class="form-group">
-                <label for="folio">Folio/Referencia (si aplica)</label>
-                <input id="folio" name="folio" type="text" placeholder="Ej. transferencia / referencia" />
-              </div>
+            <div class="room-actions">
+              <a class="btn-primary" href="reservaciones.html">Reservar</a>
             </div>
-
-            <div class="form-row">
-              <div class="form-group full-width">
-                <label class="terms-checkbox">
-                  <input type="checkbox" name="terminos" required />
-                  <span>Acepto los <a href="#">términos y condiciones</a> y la política de privacidad.</span>
-                </label>
-              </div>
-            </div>
-
-            <div class="form-actions">
-              <button class="btn-secondary" type="reset">Limpiar</button>
-              <button class="btn-primary" type="submit">Enviar solicitud</button>
-            </div>
-          </form>
-        </div>
-
-        <div class="faq-section">
-          <h2>Preguntas frecuentes</h2>
-          <div class="faq-item">
-            <h4>¿La temática indica ubicación?</h4>
-            <p>No. La temática es inspiracional y decorativa, no representa la ubicación real.</p>
           </div>
-          <div class="faq-item">
-            <h4>¿Cómo se confirma la reservación?</h4>
-            <p>Al enviar tu solicitud, nuestro equipo te contacta para confirmar disponibilidad y detalles.</p>
+          <div class="room-gallery">
+            <div class="carousel">
+              <div class="carousel-slide"><span class="slide-label">Vista principal</span></div>
+            </div>
           </div>
-          <div class="faq-item">
-            <h4>¿Puedo solicitar llegada tarde?</h4>
-            <p>Sí, agrega un comentario en el formulario y te apoyamos.</p>
+        </article>
+
+        <article class="room-detail" id="paracho">
+          <div class="room-info">
+            <span class="room-badge">Madera y música</span>
+            <h2>Habitación Paracho</h2>
+            <p>Espacio acogedor con materiales de aspecto natural y un estilo sereno para una estancia cómoda.</p>
+            <div class="room-pricing">
+              <span class="price">$1,500 MXN</span>
+              <span class="per-night">por noche · hasta 2 huéspedes</span>
+            </div>
+            <div class="room-amenities">
+              <h4>Amenidades</h4>
+              <ul>
+                <li>Cama queen</li>
+                <li>Escritorio</li>
+                <li>Aire acondicionado</li>
+                <li>Café de cortesía</li>
+              </ul>
+            </div>
+            <div class="room-actions">
+              <a class="btn-primary" href="reservaciones.html">Reservar</a>
+            </div>
           </div>
-        </div>
+          <div class="room-gallery">
+            <div class="carousel">
+              <div class="carousel-slide"><span class="slide-label">Ambiente interior</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-detail" id="yunuen">
+          <div class="room-info">
+            <span class="room-badge">Lago y descanso</span>
+            <h2>Habitación Yunuén</h2>
+            <p>Una opción versátil para pequeñas familias o viajeros que buscan mayor amplitud y comodidad.</p>
+            <div class="room-pricing">
+              <span class="price">$1,620 MXN</span>
+              <span class="per-night">por noche · hasta 3 huéspedes</span>
+            </div>
+            <div class="room-amenities">
+              <h4>Amenidades</h4>
+              <ul>
+                <li>Cama queen</li>
+                <li>Sofá de apoyo</li>
+                <li>Closet amplio</li>
+                <li>Vista al jardín</li>
+              </ul>
+            </div>
+            <div class="room-actions">
+              <a class="btn-primary" href="reservaciones.html">Reservar</a>
+            </div>
+          </div>
+          <div class="room-gallery">
+            <div class="carousel">
+              <div class="carousel-slide"><span class="slide-label">Área de descanso</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-detail" id="patzcuaro">
+          <div class="room-info">
+            <span class="room-badge">Tradición elegante</span>
+            <h2>Habitación Pátzcuaro</h2>
+            <p>Combina una estética clásica con detalles contemporáneos para una estancia refinada y funcional.</p>
+            <div class="room-pricing">
+              <span class="price">$1,750 MXN</span>
+              <span class="per-night">por noche · hasta 3 huéspedes</span>
+            </div>
+            <div class="room-amenities">
+              <h4>Amenidades</h4>
+              <ul>
+                <li>Cama king</li>
+                <li>Smart TV</li>
+                <li>Baño amplio</li>
+                <li>Secadora de cabello</li>
+              </ul>
+            </div>
+            <div class="room-actions">
+              <a class="btn-primary" href="reservaciones.html">Reservar</a>
+            </div>
+          </div>
+          <div class="room-gallery">
+            <div class="carousel">
+              <div class="carousel-slide"><span class="slide-label">Diseño temático</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-detail" id="janitzio">
+          <div class="room-info">
+            <span class="room-badge">Romántica y sobria</span>
+            <h2>Habitación Janitzio</h2>
+            <p>Ideal para parejas, con una atmósfera íntima, acabados elegantes y una experiencia más privada.</p>
+            <div class="room-pricing">
+              <span class="price">$1,880 MXN</span>
+              <span class="per-night">por noche · hasta 2 huéspedes</span>
+            </div>
+            <div class="room-amenities">
+              <h4>Amenidades</h4>
+              <ul>
+                <li>Cama king</li>
+                <li>Iluminación ambiental</li>
+                <li>Minibar</li>
+                <li>Set de amenidades</li>
+              </ul>
+            </div>
+            <div class="room-actions">
+              <a class="btn-primary" href="reservaciones.html">Reservar</a>
+            </div>
+          </div>
+          <div class="room-gallery">
+            <div class="carousel">
+              <div class="carousel-slide"><span class="slide-label">Detalle de habitación</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-detail" id="suite-quencio">
+          <div class="room-info">
+            <span class="room-badge">Suite familiar</span>
+            <h2>Suite Quencio</h2>
+            <p>La alternativa más amplia del hotel, perfecta para compartir una estancia cómoda con mayor capacidad.</p>
+            <div class="room-pricing">
+              <span class="price">$2,400 MXN</span>
+              <span class="per-night">por noche · hasta 4 huéspedes</span>
+            </div>
+            <div class="room-amenities">
+              <h4>Amenidades</h4>
+              <ul>
+                <li>Dos camas</li>
+                <li>Sala de estar</li>
+                <li>Wi‑Fi premium</li>
+                <li>Espacio adicional</li>
+              </ul>
+            </div>
+            <div class="room-actions">
+              <a class="btn-primary" href="reservaciones.html">Reservar</a>
+            </div>
+          </div>
+          <div class="room-gallery">
+            <div class="carousel">
+              <div class="carousel-slide"><span class="slide-label">Suite principal</span></div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
   </main>
 
   <footer>
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Lo que nos diferencia</h4>
-        <p>Somos un hotel que busca representar lo más icónico de Michoacán con una experiencia cálida, elegante y cómoda.</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Lo que nos diferencia</h4>
+          <p>Somos un hotel que busca representar lo más icónico de Michoacán con una experiencia cálida, elegante y cómoda.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="habitaciones.html">Habitaciones</a></li>
+            <li><a href="reservaciones.html">Reservaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Atención</h4>
+          <p>Horario: 8:00–22:00</p>
+          <p>WhatsApp: +52 000 000 0000</p>
+          <p>Correo: contacto@quintadalam.com</p>
+        </div>
       </div>
-      <div class="footer-section">
-        <h4>Enlaces Rápidos</h4>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="habitaciones.html">Habitaciones</a></li>
-          <li><a href="reservaciones.html">Reservaciones</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Atención</h4>
-        <p>Horario: 8:00–22:00</p>
-        <p>WhatsApp: +52 000 000 0000</p>
-        <p>Correo: contacto@quintadalam.com</p>
-      </div>
+      <div class="footer-bottom">© 2026 Quinta Dalam. Todos los derechos reservados.</div>
     </div>
-    <div class="footer-bottom">© 2026 Quinta Dalam. Todos los derechos reservados.</div>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>

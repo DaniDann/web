@@ -451,3 +451,52 @@ footer{
   .room-detail{grid-template-columns:1fr}
   .carousel,.carousel-slide{min-height:300px}
 }
+
+
+.reservation-layout{display:grid;gap:18px}
+.terms-wrap{display:flex;flex-direction:row;align-items:flex-start;gap:10px}
+.terms-wrap input{margin-top:4px}
+.summary-status{
+  margin-bottom:14px;
+  padding:12px 14px;
+  border-radius:14px;
+  background:rgba(44,95,45,.08);
+  border:1px solid rgba(44,95,45,.12);
+  color:rgba(17,24,39,.82);
+}
+.summary-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:14px;
+  margin-bottom:16px;
+}
+.summary-card-box{
+  border:1px solid rgba(0,0,0,.06);
+  border-radius:16px;
+  padding:16px;
+  background:rgba(246,247,249,.9);
+}
+.summary-card-box h3{
+  color:var(--primary-color);
+  font-size:16px;
+  margin-bottom:6px;
+}
+.summary-card-box p{color:rgba(17,24,39,.78)}
+.cost-summary-vue{
+  display:grid;
+  gap:10px;
+  margin-bottom:14px;
+}
+.cost-item{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding:10px 0;
+  border-bottom:1px solid rgba(0,0,0,.06);
+}
+.cost-item.total{
+  font-weight:900;
+  color:var(--primary-color);
+  border-bottom:0;
+}
+.summary-note{color:rgba(17,24,39,.72);margin-top:8px}
