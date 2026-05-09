@@ -15,7 +15,6 @@ $id = $_GET['id'] ?? null;
 
 $nombre = '';
 $email = '';
-$rol_id = 1;
 $tipo_usuario = 'admin';
 
 if ($id && $conn) {
@@ -32,7 +31,6 @@ if ($id && $conn) {
 
         $nombre = $usuario['nombre'];
         $email = $usuario['email'];
-        $rol_id = $usuario['rol_id'];
         $tipo_usuario = $usuario['tipo_usuario'];
     }
 }
@@ -42,7 +40,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $conn) {
     $nombre = $_POST['nombre'] ?? '';
     $email = $_POST['email'] ?? '';
     $password = $_POST['password'] ?? '';
-    $rol_id = $_POST['rol_id'] ?? 1;
     $tipo_usuario = $_POST['tipo_usuario'] ?? 'admin';
 
     if ($id) {
@@ -57,7 +54,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $conn) {
                     nombre = :nombre,
                     email = :email,
                     password_hash = :password_hash,
-                    rol_id = :rol_id,
                     tipo_usuario = :tipo_usuario
                 WHERE id = :id
             ";
@@ -73,7 +69,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $conn) {
                 SET
                     nombre = :nombre,
                     email = :email,
-                    rol_id = :rol_id,
                     tipo_usuario = :tipo_usuario
                 WHERE id = :id
             ";
@@ -93,7 +88,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $conn) {
                 nombre,
                 email,
                 password_hash,
-                rol_id,
                 tipo_usuario
             )
             VALUES
@@ -101,7 +95,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $conn) {
                 :nombre,
                 :email,
                 :password_hash,
-                :rol_id,
                 :tipo_usuario
             )
         ";
@@ -113,7 +106,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $conn) {
 
     $stmt->bindParam(':nombre', $nombre);
     $stmt->bindParam(':email', $email);
-    $stmt->bindParam(':rol_id', $rol_id);
     $stmt->bindParam(':tipo_usuario', $tipo_usuario);
 
     if ($stmt->execute()) {
@@ -200,31 +192,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $conn) {
 
             <div class="form-row">
 
-                <div class="form-group">
-
-                    <label>Rol ID</label>
-
-                    <select name="rol_id">
-
-                        <option
-                            value="1"
-                            <?= $rol_id == 1 ? 'selected' : '' ?>
-                        >
-                            Admin
-                        </option>
-
-                        <option
-                            value="2"
-                            <?= $rol_id == 2 ? 'selected' : '' ?>
-                        >
-                            Usuario
-                        </option>
-
-                    </select>
-
-                </div>
-
-                <div class="form-group">
+                <div class="form-group full-width">
 
                     <label>Tipo Usuario</label>
 
@@ -238,10 +206,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $conn) {
                         </option>
 
                         <option
-                            value="usuario"
-                            <?= $tipo_usuario == 'usuario' ? 'selected' : '' ?>
+                            value="empleado"
+                            <?= $tipo_usuario == 'empleado' ? 'selected' : '' ?>
                         >
-                            Usuario
+                            Empleado
+                        </option>
+
+                        <option
+                            value="cliente"
+                            <?= $tipo_usuario == 'cliente' ? 'selected' : '' ?>
+                        >
+                            Cliente
                         </option>
 
                     </select>

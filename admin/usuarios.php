@@ -148,7 +148,7 @@ if ($conn) {
                         <th>ID</th>
                         <th>Nombre</th>
                         <th>Email</th>
-                        <th>Rol</th>
+                        
                         <th>Tipo</th>
                         <th>Acciones</th>
 
@@ -176,9 +176,7 @@ if ($conn) {
                                     <?= htmlspecialchars($usuario['email']) ?>
                                 </td>
 
-                                <td>
-                                    <?= htmlspecialchars($usuario['rol']) ?>
-                                </td>
+                               
 
                                 <td>
                                     <?= htmlspecialchars($usuario['tipo_usuario']) ?>
