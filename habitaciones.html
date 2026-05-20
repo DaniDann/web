@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Habitaciones temáticas de Hotel Quinta Dalam" />
   <title>Habitaciones - Hotel Quinta Dalam</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/var/www/html/styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -17,12 +17,11 @@
           <p class="tagline">Tu hogar lejos de casa</p>
         </div>
         <ul class="nav-menu">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="habitaciones.html" class="active">Habitaciones</a></li>
-          <li><a href="reservaciones.html">Reservaciones</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="/var/www/html/index.html">Inicio</a></li>
+          <li><a href="/var/www/html/habitaciones.html" class="active">Habitaciones</a></li>
+          <li><a href="/var/www/html/contacto.html">Contacto</a></li>
         </ul>
-        <a class="btn-reserva" href="reservaciones.html">Reservar Ahora</a>
+        <a class="btn-reserva" href="/var/www/html/reservaciones.html">Reservar Ahora</a>
       </div>
     </nav>
   </header>
@@ -39,39 +38,57 @@
       <div class="container">
         <h2>Explora nuestras opciones</h2>
         <p class="subtitle">Cada habitación combina confort, diseño y una inspiración regional distinta.</p>
+
         <div class="rooms-grid">
           <article class="room-card">
-            <div class="room-image"></div>
+            <div class="room-image">
+              <img src="fotos/quinta 1.jpg" alt="Habitación Tzintzuntzan" />
+            </div>
             <h4>Tzintzuntzan</h4>
             <p>Ambiente cálido con detalles artesanales y capacidad para 2 huéspedes.</p>
             <a class="btn-secondary" href="#tzintzuntzan">Ver detalles</a>
           </article>
+
           <article class="room-card">
-            <div class="room-image"></div>
+            <div class="room-image">
+              <img src="fotos/quinta 2.jpg" alt="Habitación Paracho" />
+            </div>
             <h4>Paracho</h4>
             <p>Inspirada en la madera y la música tradicional. Ideal para 2 huéspedes.</p>
             <a class="btn-secondary" href="#paracho">Ver detalles</a>
           </article>
+
           <article class="room-card">
-            <div class="room-image"></div>
+            <div class="room-image">
+              <img src="fotos/quinta 11.jpg" alt="Habitación Yunuén" />
+            </div>
             <h4>Yunuén</h4>
             <p>Estancia serena para hasta 3 huéspedes, con un estilo fresco y relajante.</p>
             <a class="btn-secondary" href="#yunuen">Ver detalles</a>
           </article>
+
           <article class="room-card">
-            <div class="room-image"></div>
+            <div class="room-image">
+              <img src="fotos/quinta 3.jpg" alt="Habitación Pátzcuaro" />
+            </div>
             <h4>Pátzcuaro</h4>
             <p>Diseño elegante con acentos tradicionales y capacidad para 3 personas.</p>
             <a class="btn-secondary" href="#patzcuaro">Ver detalles</a>
           </article>
+
           <article class="room-card">
-            <div class="room-image"></div>
+            <div class="room-image">
+              <img src="fotos/quinta 5.jpg" alt="Habitación Janitzio" />
+            </div>
             <h4>Janitzio</h4>
             <p>Habitación íntima y sofisticada, recomendada para escapadas de pareja.</p>
             <a class="btn-secondary" href="#janitzio">Ver detalles</a>
           </article>
+
           <article class="room-card">
-            <div class="room-image"></div>
+            <div class="room-image">
+              <img src="fotos/quinta 13.jpg" alt="Suite Quencio" />
+            </div>
             <h4>Suite Quencio</h4>
             <p>Nuestra opción más amplia, pensada para familias o grupos de hasta 4 huéspedes.</p>
             <a class="btn-secondary" href="#suite-quencio">Ver detalles</a>
@@ -95,18 +112,23 @@
               <h4>Amenidades</h4>
               <ul>
                 <li>Cama matrimonial</li>
-                <li>Wi‑Fi</li>
+                <li>Wi-Fi</li>
                 <li>Baño privado</li>
                 <li>TV</li>
               </ul>
             </div>
             <div class="room-actions">
-              <a class="btn-primary" href="reservaciones.html">Reservar</a>
+              <a class="btn-primary" href="/var/www/html/reservaciones.html">Reservar</a>
             </div>
           </div>
           <div class="room-gallery">
-            <div class="carousel">
-              <div class="carousel-slide"><span class="slide-label">Vista principal</span></div>
+            <div class="carousel single-slide">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="fotos/quinta 1.jpg" alt="Vista principal de la habitación Tzintzuntzan" />
+                  <span class="slide-label">Vista principal</span>
+                </div>
+              </div>
             </div>
           </div>
         </article>
@@ -130,12 +152,17 @@
               </ul>
             </div>
             <div class="room-actions">
-              <a class="btn-primary" href="reservaciones.html">Reservar</a>
+              <a class="btn-primary" href="/var/www/html/reservaciones.html">Reservar</a>
             </div>
           </div>
           <div class="room-gallery">
-            <div class="carousel">
-              <div class="carousel-slide"><span class="slide-label">Ambiente interior</span></div>
+            <div class="carousel single-slide">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="fotos/quinta 2.jpg" alt="Ambiente interior de la habitación Paracho" />
+                  <span class="slide-label">Ambiente interior</span>
+                </div>
+              </div>
             </div>
           </div>
         </article>
@@ -159,12 +186,17 @@
               </ul>
             </div>
             <div class="room-actions">
-              <a class="btn-primary" href="reservaciones.html">Reservar</a>
+              <a class="btn-primary" href="/var/www/html/reservaciones.html">Reservar</a>
             </div>
           </div>
           <div class="room-gallery">
-            <div class="carousel">
-              <div class="carousel-slide"><span class="slide-label">Área de descanso</span></div>
+            <div class="carousel single-slide">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="fotos/quinta 11.jpg" alt="Área de descanso de la habitación Yunuén" />
+                  <span class="slide-label">Área de descanso</span>
+                </div>
+              </div>
             </div>
           </div>
         </article>
@@ -188,12 +220,17 @@
               </ul>
             </div>
             <div class="room-actions">
-              <a class="btn-primary" href="reservaciones.html">Reservar</a>
+              <a class="btn-primary" href="/var/www/html/reservaciones.html">Reservar</a>
             </div>
           </div>
           <div class="room-gallery">
-            <div class="carousel">
-              <div class="carousel-slide"><span class="slide-label">Diseño temático</span></div>
+            <div class="carousel single-slide">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="fotos/quinta 3.jpg" alt="Diseño temático de la habitación Pátzcuaro" />
+                  <span class="slide-label">Diseño temático</span>
+                </div>
+              </div>
             </div>
           </div>
         </article>
@@ -217,12 +254,17 @@
               </ul>
             </div>
             <div class="room-actions">
-              <a class="btn-primary" href="reservaciones.html">Reservar</a>
+              <a class="btn-primary" href="/var/www/html/reservaciones.html">Reservar</a>
             </div>
           </div>
           <div class="room-gallery">
-            <div class="carousel">
-              <div class="carousel-slide"><span class="slide-label">Detalle de habitación</span></div>
+            <div class="carousel single-slide">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="fotos/quinta 5.jpg" alt="Detalle de la habitación Janitzio" />
+                  <span class="slide-label">Detalle de habitación</span>
+                </div>
+              </div>
             </div>
           </div>
         </article>
@@ -241,17 +283,22 @@
               <ul>
                 <li>Dos camas</li>
                 <li>Sala de estar</li>
-                <li>Wi‑Fi premium</li>
+                <li>Wi-Fi premium</li>
                 <li>Espacio adicional</li>
               </ul>
             </div>
             <div class="room-actions">
-              <a class="btn-primary" href="reservaciones.html">Reservar</a>
+              <a class="btn-primary" href="/var/www/html/reservaciones.html">Reservar</a>
             </div>
           </div>
           <div class="room-gallery">
-            <div class="carousel">
-              <div class="carousel-slide"><span class="slide-label">Suite principal</span></div>
+            <div class="carousel single-slide">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="fotos/quinta 13.jpg" alt="Suite principal Quencio" />
+                  <span class="slide-label">Suite principal</span>
+                </div>
+              </div>
             </div>
           </div>
         </article>
@@ -269,10 +316,10 @@
         <div class="footer-section">
           <h4>Enlaces Rápidos</h4>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="habitaciones.html">Habitaciones</a></li>
-            <li><a href="reservaciones.html">Reservaciones</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="/var/www/html/index.html">Inicio</a></li>
+            <li><a href="/var/www/html/habitaciones.html">Habitaciones</a></li>
+            <li><a href="/var/www/html/reservaciones.html">Reservaciones</a></li>
+            <li><a href="/var/www/html/contacto.html">Contacto</a></li>
           </ul>
         </div>
         <div class="footer-section">

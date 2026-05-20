@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Hotel Quinta Dalam - Reserva tu habitación en nuestro exclusivo hotel" />
   <title>Hotel Quinta Dalam - Inicio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/var/www/html/styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -17,90 +17,147 @@
           <p class="tagline">Tu hogar lejos de casa</p>
         </div>
         <ul class="nav-menu">
-          <li><a href="index.html" class="active">Inicio</a></li>
-          <li><a href="habitaciones.html">Habitaciones</a></li>
-          <li><a href="reservaciones.html">Reservaciones</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="/var/www/html/index.html" class="active">Inicio</a></li>
+          <li><a href="/var/www/html/habitaciones.html">Habitaciones</a></li>
+          <li><a href="/var/www/html/contacto.html">Contacto</a></li>
         </ul>
-        <a class="btn-reserva" href="reservaciones.html">Reservar Ahora</a>
+        <a class="btn-reserva" href="/var/www/html/reservaciones.html">Reservar Ahora</a>
       </div>
     </nav>
   </header>
 
   <main id="contenido">
-    <section class="hero" aria-label="Portada">
-      <div class="hero-content">
-        <h2>Bienvenido a Quinta Dalam</h2>
-        <p>Habitaciones temáticas inspiradas en municipios de Michoacán: elegancia, calidez y descanso en cada detalle.</p>
-        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-          <a class="btn-primary" href="reservaciones.html">Reservar</a>
-          <a class="btn-secondary" href="habitaciones.html">Ver habitaciones</a>
-        </div>
-      </div>
-    </section>
+   <section class="hero" aria-label="Portada">
+  <div class="hero-content">
+    <h2>Bienvenido a Quinta Dalam</h2>
+    <p>Habitaciones temáticas inspiradas en municipios de Michoacán: elegancia, calidez y descanso en cada detalle.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a class="btn-primary" href="/var/www/html/reservaciones.html">Reservar</a>
+      <a class="btn-secondary" href="/var/www/html/habitaciones.html">Ver habitaciones</a>
+    </div>
+  </div>
+</section>
 
     <section class="mission-vision">
       <div class="container">
         <div class="mission">
           <h3>Misión</h3>
-          <p>Brindar una estancia cómoda y memorable, con espacios diseñados para relajarte y vivir una experiencia auténtica.</p>
+          <p>Brindar una estancia cómoda y memorable, con espacios diseñados para relajarte y vivir una experiencia auténtica rescatando la identidad y tradición de hermosos municipios de nuestro bello Michoacán.</p>
         </div>
         <div class="vision">
           <h3>Visión</h3>
-          <p>Ser un hotel referente por su servicio, diseño temático y atención cálida, inspirando orgullo por nuestras tradiciones.</p>
+          <p>Ser un hotel referente por su servicio, diseño temático y atención cálida, inspirando orgullo por nuestras tradiciones y en honor a nuestros seres queridos.</p>
         </div>
       </div>
     </section>
 
+      <section class="why-visit">
+  <div class="container">
+    <h2>¿Por qué visitar Quinta Dalam en Quencio?</h2>
+    <p class="subtitle">Descubre todo lo que hace especial tu estancia con nosotros.</p>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-icon">🌿</div>
+        <h4>Naturaleza y tranquilidad</h4>
+        <p>Disfruta de paisajes naturales, aire fresco y un ambiente perfecto para relajarte lejos del ruido de la ciudad.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">🏞️</div>
+        <h4>Laguna y áreas verdes</h4>
+        <p>Hermosos espacios con agua, árboles y zonas ideales para caminar, descansar o tomar fotografías.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">📸</div>
+        <h4>Experiencia visual única</h4>
+        <p>Un lugar perfecto para capturar momentos inolvidables gracias a sus vistas y ambiente natural.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">🎣</div>
+        <h4>Actividades al aire libre</h4>
+        <p>Desde caminatas, picnic, hasta momentos de descanso junto al agua o exploración del entorno.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">🛏️</div>
+        <h4>Comodidad y descanso</h4>
+        <p>Habitaciones diseñadas para brindarte tranquilidad, confort y una experiencia relajante.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">❤️</div>
+        <h4>Ideal para parejas y familias</h4>
+        <p>Perfecto para escapadas románticas o viajes familiares en un entorno seguro y acogedor.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
     <section class="rooms-preview">
       <div class="container">
         <h2>Habitaciones destacadas</h2>
-        <p class="subtitle">Cada habitación tiene su propia atmósfera temática (sin ser su ubicación).</p>
+        <p class="subtitle">Cada habitación tiene su propia atmósfera temática.</p>
 
         <div class="rooms-grid">
-
           <article class="room-card">
-            <div class="room-image"></div>
-            <h4>Tzintzunzan</h4>
+            <div class="room-image">
+              <img src="fotos/quinta 1.jpg" alt="Habitación Tzintzuntzan" />
+            </div>
+            <h4>Tzintzuntzan</h4>
             <p>Inspiración: Cobre y lacas. Ideal para descansar con estilo.</p>
-            <a class="btn-secondary" href="habitaciones.html#tzintzunzan">Ver detalles</a>
+            <a class="btn-secondary" href="habitaciones.html#tzintzuntzan">Ver detalles</a>
           </article>
 
           <article class="room-card">
-            <div class="room-image"></div>
+            <div class="room-image">
+              <img src="fotos/quinta 2.jpg" alt="Habitación Paracho" />
+            </div>
             <h4>Paracho</h4>
             <p>Inspiración: Guitarras y madera. Ideal para descansar con estilo.</p>
             <a class="btn-secondary" href="habitaciones.html#paracho">Ver detalles</a>
           </article>
 
           <article class="room-card">
-            <div class="room-image"></div>
+            <div class="room-image">
+              <img src="fotos/quinta 11.jpg" alt="Habitación Yunuén" />
+            </div>
             <h4>Yunuen</h4>
             <p>Inspiración: Lago y calma. Ideal para descansar con estilo.</p>
             <a class="btn-secondary" href="habitaciones.html#yunuen">Ver detalles</a>
           </article>
 
           <article class="room-card">
-            <div class="room-image"></div>
+            <div class="room-image">
+              <img src="fotos/quinta 3.jpg" alt="Habitación Pátzcuaro" />
+            </div>
             <h4>Patzcuaro</h4>
             <p>Inspiración: Tradición y cantera. Ideal para descansar con estilo.</p>
             <a class="btn-secondary" href="habitaciones.html#patzcuaro">Ver detalles</a>
           </article>
 
           <article class="room-card">
-            <div class="room-image"></div>
+            <div class="room-image">
+              <img src="fotos/quinta 12.jpg" alt="Habitación Coeneo" />
+            </div>
             <h4>Coeneo</h4>
             <p>Inspiración: Textiles y tramas. Ideal para descansar con estilo.</p>
             <a class="btn-secondary" href="habitaciones.html#coeneo">Ver detalles</a>
           </article>
 
           <article class="room-card">
-            <div class="room-image"></div>
+            <div class="room-image">
+              <img src="fotos/quinta 5.jpg" alt="Habitación Janitzio" />
+            </div>
             <h4>Janitzio</h4>
             <p>Inspiración: Noche y velas. Ideal para descansar con estilo.</p>
             <a class="btn-secondary" href="habitaciones.html#janitzio">Ver detalles</a>
           </article>
-
         </div>
       </div>
     </section>
@@ -137,7 +194,7 @@
       <div class="container">
         <h2>¿Listo para reservar?</h2>
         <p>Completa el formulario y confirma tu estancia.</p>
-        <a href="reservaciones.html" class="btn-primary-large">Ir a Reservaciones</a>
+        <a href="/var/www/html/reservaciones.html" class="btn-primary-large">Ir a Reservaciones</a>
       </div>
     </section>
   </main>
@@ -152,10 +209,10 @@
         <div class="footer-section">
           <h4>Enlaces Rápidos</h4>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="habitaciones.html">Habitaciones</a></li>
-            <li><a href="reservaciones.html">Reservaciones</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="/var/www/html/index.html">Inicio</a></li>
+            <li><a href="/var/www/html/habitaciones.html">Habitaciones</a></li>
+            <li><a href="/var/www/html/reservaciones.html">Reservaciones</a></li>
+            <li><a href="/var/www/html/contacto.html">Contacto</a></li>
           </ul>
         </div>
         <div class="footer-section">
