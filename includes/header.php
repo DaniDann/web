@@ -10,7 +10,7 @@ require_once __DIR__ . '/../auth.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars($pageTitle ?? 'Quinta Dalam') ?></title>
 
-    <link rel="stylesheet" href="/web/styles.css">
+    <link rel="stylesheet" href="/web-version-3.0/styles.css">
 </head>
 
 <body>
@@ -27,16 +27,16 @@ require_once __DIR__ . '/../auth.php';
             </div>
 
             <ul class="nav-menu">
-                <li><a href="/web/index.php">Inicio</a></li>
-                <li><a href="/web/habitaciones.php">Habitaciones</a></li>
-                <li><a href="/web/contacto.php">Contacto</a></li>
-                <li><a href="/web/reservaciones.php">Reservar Ahora</a></li>
+                <li><a href="/web-version-3.0/index.php">Inicio</a></li>
+                <li><a href="/web-version-3.0/habitaciones.php">Habitaciones</a></li>
+                <li><a href="/web-version-3.0/contacto.php">Contacto</a></li>
+                <li><a href="/web-version-3.0/reservaciones.php">Reservar Ahora</a></li>
 
                 <?php if (isLoggedIn()): ?>
-                    <li><a href="/web/admin/usuarios.php">Usuarios</a></li>
-                    <li><a href="/web/logout.php">Salir</a></li>
+                    <li><a href="/web-version-3.0/admin/usuarios.php">Usuarios</a></li>
+                    <li><a href="/web-version-3.0/logout.php">Salir</a></li>
                 <?php else: ?>
-                    <li><a href="/web/login.php">Login</a></li>
+                    <li><a href="/web-version-3.0/login.php">Login</a></li>
                 <?php endif; ?>
             </ul>
 
